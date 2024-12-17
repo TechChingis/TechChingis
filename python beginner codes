@@ -1,0 +1,271 @@
+# Exersice 1 Rectangle area calc
+
+length = float(input("Enter the length: "))
+curve = float(input("Enter the curve: "))
+area = length * curve
+
+print(f"The area is: {area}^2")
+
+# exersice 2 shopping cart program
+
+item = input("What item would you like to purchase?: ")
+price = float(input("What is the price?: "))
+quantity = int(input("How many would you like?: "))
+total = price * quantity
+
+print(f"You have bought {quantity} x {item}")
+print(f"You're total is: ${total}")
+
+# Exersice 3 total reach 
+
+height = float(input("What is your Height?: "))
+wingspan = float(input("What is your wingspan?: "))
+area = height + wingspan
+
+print(f"Your total reach: {area}")
+
+# Exersice 4 Book store purchase
+
+book = str(input("What book would you like to purchase?: "))
+price = float(input("What is the the amount?: "))
+total = price
+
+print(f"You have purchased {book}/Book x ${price}")
+print(f"You're total is: ${total}")
+
+# Madlibs game
+# Word game were you can create a story
+# By filling in random words
+
+noun1 = input("Enter a noun (person, place, thing): ")
+
+noun2 = input("Enter a noun (person, place, thing): ")
+
+adjective1 = input("Enter an adjective (decription): ")
+
+noun3 = input("Enter a noun (person, place, thing): ")
+
+
+print(f"Today i met {noun1}")
+print(f"We went to {noun2}")
+print(f"It was {adjective1}")
+print(f"Then we went {noun3}")
+
+# Madlibs Game
+# finish the sentence with random words
+
+print("Hello welcome to Chingis's Madlibs")
+print("finish the sentence with random words")
+
+adjective1 = input("Enter an adjective (description): ")
+noun1 = input("Enter a noun (person, place, thing)")
+adjective2 = input("Enter an adjective (description): ")
+verb1 = input("Enter a verb ending with 'ing': ")
+adjective3 = input("Enter an adjective (description): ")
+
+print(f"Today i went to a {adjective1} KFC.")
+print(f"In the back i saw {noun1}")
+print(f"{noun1} was {adjective2} and {verb1}")
+print(f"I was {adjective3}!")
+      
+   adjective1 = input("Enter an adjective (description): ")
+noun1 = input("Enter a noun (person, place, thing): ")
+adjective2 = input("Enter an adjective (desription): ")
+verb1 = input("Enter a verb ending with 'ing': ")
+adjective3 = input("Enter an adjective (desription): ")
+
+print(f"I saw a {adjective1} car")
+print(f"it wasn't {noun1}")
+print(f"I felt {adjective2}")
+print(f"it was {verb1}")
+print(f"But it was {adjective3}") 
+
+freinds = 10
+
+#freinds = freinds + 1
+#freinds += 1
+#freinds = freinds - 2
+#freinds -= 2
+#freinds = freinds * 4
+#freinds *= 4
+#freinds = freinds / 2
+#freinds /= 2
+#freinds = freinds **2
+#freinds **= 2
+#remainder = freinds % 3
+#remainder =  freinds % 3
+
+print(remainder)
+
+
+x = 2.72
+y = 4
+z = 3
+
+#round/ is for rounding a number
+#result = round(x)
+#abs - absolute vale of the number
+#result = abs(y)
+#pow - power funtion basicly y-4 4, 3 - 4x4x4 3x
+#result = pow(4, 3)
+#result = max(x, y, z)
+#result = min(x, y, z)
+
+print(result)
+
+#proggraming math functions
+#need (import math) for math eqations
+import math
+
+x = 9.1
+
+#for angles and stuff
+#print(math.pi)
+#for physics and stuff math.e
+#print(math.e)
+#to find the sqaure root
+#result = math.sqrt(x)
+#to rounding  to the nearest high number
+#result = math.ceil(x)
+#rounding to the nearest low number
+#result = math.floor(x)
+
+print(result)
+
+import math
+
+radius = float(input("Enter the radius of a circle: "))
+
+circumference = 2 * math.pi * radius
+
+#the round is for to come in any type of digits as of 2
+
+print(f"The circumference is:{round(circumference, 2)}cm ")
+
+import math
+
+radius = float(input("Enter the radius of the circle: "))
+area = math.pi * pow(radius, 2)  # Calculate the area of the circle
+
+print(f"The area of the circle is: {round(area, 2)}cm^2")
+
+import math
+
+a = float(input("Enter side A: "))
+b = float(input("Enter side B: "))
+
+c = math.sqrt(pow(a, 2) + pow(b, 2))
+
+print(f"Side c = {c})
+
+# if = Do some code only IF some condition is True
+#      Else do something else
+
+age = float(input("Enter your age: "))
+if age>= 100:
+    print("You are to old to sign up!")
+elif age >= 18:
+    print("You are now signed up!")
+elif age < 0:
+    print("You are not born yet!")
+else:
+    print("You must be +18 to sign up!")
+
+
+response = input("Would you like some food? (Y/N):")
+
+if response == "Y":
+    print("Here have some food")
+else:
+    print("No food for you!")
+
+#Booleans with if staements
+
+for_sale = False
+
+if for_sale:
+    print("Yes this is for sale")
+else:
+    print("No it is NOT for sale!")
+
+online = True
+
+if online:
+    print("The user is online")
+else:
+    print("The user is offline")
+
+# Python calculator
+
+operator = input("Enter an operator (+ - * /): ")
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+if operator == "+":
+    result = num1 + num2
+elif operator == "-":
+    result = num1 - num2
+elif operator == "*":
+    result = num1 * num2
+elif operator== "/":
+    #Handle Division by zero
+    if num2 != 0:
+        result = num1 / num2
+    else:
+        result = "Error, Division by Zero"
+else:
+    result = "Invalid Operator"
+
+#Dispaly the result
+print(f"The result is: {result}!")
+
+operator = input("Enter an operator (+ - * /): ")
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+if operator == "+":
+    result = num1 + num2
+    print(result)
+elif operator == "-":
+    result = num1 - num2
+    print(result)
+elif operator == "*":
+    result = num1 * num2
+    print(result)
+elif operator == "/":
+    result = num1 /num2
+    print(result)
+else:
+    print(f"{operator} is not a valid operator")
+    
+# Weight converter
+
+# Ask the user to choose a conversion type
+print("Weight Conversion Program")
+print("Choose a conversion type:")
+print("1. Kilograms to Pounds")
+print("2. Pounds to Kilograms")
+print("3. Kilograms to Grams")
+print("4. Grams to Kilograms")
+
+# Take user input for the conversion choice
+choice = input("Enter the number of the conversion type (1/2/3/4): ")
+
+# Ask for the weight value to convert
+weight = float(input("Enter the weight value: "))
+
+# Perform the conversion based on user choice
+if choice == "1":
+    result = weight * 2.20462  # Kilograms to Pounds
+    print(f"{weight} kilograms is equal to {result:.2f} pounds.")
+elif choice == "2":
+    result = weight / 2.20462  # Pounds to Kilograms
+    print(f"{weight} pounds is equal to {result:.2f} kilograms.")
+elif choice == "3":
+    result = weight * 1000  # Kilograms to Grams
+    print(f"{weight} kilograms is equal to {result:.2f} grams.")
+elif choice == "4":
+    result = weight / 1000  # Grams to Kilograms
+    print(f"{weight} grams is equal to {result:.2f} kilograms.")
+else:
+    print("Invalid choice! Please enter 1, 2, 3, or 4.")
